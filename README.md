@@ -63,6 +63,7 @@ The model achieved an outstanding **0.95 weighted F1-score** across 14,100 unsee
 1. **Legacy Isolation:** The model operates flawlessly on older titles. *Bloodborne* (0.97 F1) and *Dark Souls 2* (0.98 F1) are rarely confused with modern titles due to their distinct gothic/desaturated architectural styles.
 2. **The "Engine Bleed":** As expected, the highest rate of confusion exists between *Dark Souls 3* and *Elden Ring*. Because they share the same proprietary game engine and highly similar asset texturing (lighting models, stone walls), the network occasionally struggles to separate them.
 3. **Color Palette Reliance:** The matrix revealed 86 *Elden Ring* images misclassified as *Sekiro*. This highlights the model's reliance on vibrant color palettes (bright greens/yellows) and outdoor foliage, which are prominent in both games but absent from the rest of the catalog.
+4. Interestingly, the model classifies real life pictures as Sekiro with high confidence. This could stem from the game being the most similar to a realistic artstyle or a result of domain reliance for data
 
 ---
 
